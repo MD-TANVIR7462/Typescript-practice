@@ -48,3 +48,14 @@ const Evan : Fullstack = {
 
 
 
+const age: number = 22
+if(age>18){
+   console.log("adult");
+
+} 
+else{
+   console.log("not adult");
+}
+
+
+console.log( age === 18  ? "adult" : "not adult")
