@@ -66,9 +66,17 @@ const result = isAuthinticated ?? "Guest"
 
 
 
-const  unKnown = (value : unknown)=>{
+const  unKnown = (value : unknown)=>{ //unknown type
    let strORnumber ;
    const  result = typeof value === "string"?  strORnumber="its a string" : strORnumber= "its not a string"  
    console.log(strORnumber);
 }
 unKnown(10);
+
+
+const ErrorThrow = (value :string) : never => { //never type whitch function never returns anything we can use a never type here 
+
+throw new Error(value);
+}
+console.log( ErrorThrow("Hi Im An Error") )
+
