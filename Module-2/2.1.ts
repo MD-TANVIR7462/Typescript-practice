@@ -48,7 +48,7 @@ const Evan : Fullstack = {
 
 
 
-const age: number = 22
+const age: number = 22 //tarnery and if else
 if(age>18){
    console.log("adult");
 
@@ -59,3 +59,16 @@ else{
 
 
 console.log( age === 18  ? "adult" : "not adult")
+
+
+const isAuthinticated = null //nulish qualishing oparator (??) 
+const result = isAuthinticated ?? "Guest"
+
+
+
+const  unKnown = (value : unknown)=>{
+   let strORnumber ;
+   const  result = typeof value === "string"?  strORnumber="its a string" : strORnumber= "its not a string"  
+   console.log(strORnumber);
+}
+unKnown(10);
