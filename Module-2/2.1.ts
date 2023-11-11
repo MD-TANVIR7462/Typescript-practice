@@ -1,3 +1,6 @@
+
+//Type
+
 type Students = {
    name: string;
    height: string;
@@ -19,3 +22,29 @@ const student: Students = {
     city: "Chadpur",
   },
 };
+
+//Union and intersection
+
+type  Developer = {
+   
+   name : string;
+   Position :"frontEnd"| "backEnd" ; //union type ( | )
+   }
+
+const tanvir : Developer = {
+   name:"Tanvir",
+   Position:"frontEnd"
+
+}
+
+type Fullstack = Developer &{skills: string[]}
+const Evan : Fullstack = {
+   name:"Cons",
+   Position:"frontEnd",
+   skills:["html,css,js,react"]
+
+
+} 
+
+
+
